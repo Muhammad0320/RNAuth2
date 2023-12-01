@@ -1,9 +1,9 @@
 import { useState } from "react";
+import AuthForm from "./AuthForm";
+import FlatButton from "../ui/FlatButton";
+import { Colors } from "../../constants/styles";
 import { Alert, StyleSheet, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import FlatButton from "../ui/FlatButton";
-import AuthForm from "./AuthForm";
-import { Colors } from "../../constants/styles";
 
 function AuthContent({ isLogin, onAuthenticate }) {
   const navigation = useNavigation();
