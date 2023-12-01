@@ -1,7 +1,7 @@
 import { useState } from "react";
-import AuthContent from "../components/Auth/AuthContent";
-import { signupApi } from "../utils/auth";
 import { Alert } from "react-native";
+import { signupApi } from "../utils/auth";
+import AuthContent from "../components/Auth/AuthContent";
 import LoadingOverlay from "../components/ui/LoadingOverlay";
 
 function SignupScreen() {
