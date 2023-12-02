@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
 const AuthContext = createContext({
   authenticate: (token) => {},
@@ -26,4 +26,12 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+};
+
+export const useAuthContext = () => {
+  const context = useContext(AuthContext);
+
+  if (!context) throw new Error("Auth context was used outside auth provider");
+
+  return context;
 };
