@@ -59,10 +59,10 @@ function Navigation() {
   const { isAuthenticated } = useAuthContext();
 
   return (
-    <AuthContextProvider>
+    <NavigationContainer>
       {!isAuthenticated && <AuthStack />}
       {isAuthenticated && <AuthenticatedStack />}
-    </AuthContextProvider>
+    </NavigationContainer>
   );
 }
 
