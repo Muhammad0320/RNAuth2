@@ -22,7 +22,7 @@ export const signupApi = async (email, password) => {
 };
 
 export const loginApi = async (email, password) => {
-  const data = await authenicate("signInWithPasssword", email, password);
+  const data = await authenicate("signInWithPassword", email, password);
 
   return data;
 };

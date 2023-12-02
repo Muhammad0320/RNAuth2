@@ -9,6 +9,7 @@ function LoginScreen() {
 
   const handleLogin = async ({ email, password }) => {
     try {
+      console.log(email, password);
       setIsLoading(true);
 
       await loginApi(email, password);
