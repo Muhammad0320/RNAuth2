@@ -22,9 +22,8 @@ function LoginScreen() {
         "Authentication failed",
         "Could not log you in, please check your credentials or try again later"
       );
+      setIsLoading(false);
     }
-
-    setIsLoading(false);
   };
 
   if (isLoading) {

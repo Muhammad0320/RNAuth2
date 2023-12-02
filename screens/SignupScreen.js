@@ -22,9 +22,8 @@ function SignupScreen() {
         "Authentication failed",
         "Please check your inputs values or try again later "
       );
+      setISAuthenticating(false);
     }
-
-    setISAuthenticating(false);
   };
 
   if (isAuthenticating) {
